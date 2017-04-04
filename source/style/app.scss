@@ -1,5 +1,18 @@
-body {
-  margin: 0;
-}
+// palettes
+$green-dark: rgb(136, 134, 91);
+$green: rgb(108, 156, 90);
+$black: rgba(0, 0, 0, 0.8);
+$white: rgb(255, 255, 255);
+$grey: rgb(55, 62, 66);
+$beige: rgb(235, 239, 226);
 
-@import 'common/greating';
+
+// adjustment
+@import "common/fonts";
+@import "common/adjustment";
+//@import 'common/sprite';
+@import "common/mixins";
+@import "common/font-awesome";
+
+//styles
+@import "common/header";

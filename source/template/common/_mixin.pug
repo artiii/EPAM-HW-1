@@ -1,0 +1,4 @@
+mixin icon(name, mods)
+    - mods = mods || ''
+    svg(class="icon icon-" + name class=mods)
+        use(xlink:href="/assets/img/sprite.svg#" + name)
