@@ -1,7 +1,48 @@
 header.header
-    .header__share-point-top
-        .share-point__logo
-            +icon('share-point-logo')
-        span.share-point__text sharepoint
-    .header__share-point-nav
+    .header__share-point
+        .header__share-point-top-bg
+            .header-container
+                .header__share-point-top
+                        .share-point-top__logo
+                            +icon('share-point-logo')
+                            span.share-point-top__text sharepoint
+                        ul.share-point-top__menu
+                            li.share-point-top__item
+                                a(href='#').share-point-top__link My Sites
+                            li.share-point-top__item
+                                a(href='#').share-point-top__link Yammer
+                            li.share-point-top__item
+                                a(href='#').share-point-top__link OneDrive
+                            li.share-point-top__item
+                                a(href='#').share-point-top__link Sites
+                            li.share-point-top__item.share-point-top__item--active
+                                a(href='#').share-point-top__link--log.share-point-top__link--name Elizaveta Eliseeva
+                                a(href='#').share-point-top__link--log
+                                    i.fa.fa-cog(aria-hidden="true")
+                                a(href='#').share-point-top__link--log
+                                    i.fa.fa-question-circle(aria-hidden="true")
+        .header__share-point-nav-bg
+            .header-container
+                .header__share-point-nav
+                    ul.share-point-nav__list-left
+                        li.share-point-nav__item.share-point-nav__item-left.share-point-nav__item-left--active
+                            a(href='#').share-point-nav__link browse
+                        li.share-point-nav__item.share-point-nav__item-left
+                            a(href='#').share-point-nav__link files
+                        li.share-point-nav__item.share-point-nav__item-left
+                            a(href='#').share-point-nav__link library
+                    ul.share-point-nav__list-right
+                        li.share-point-nav__item.share-point-nav__item-right
+                            a(href='#').share-point-nav__link.share-point-nav__link-share share
+                        li.share-point-nav__item.share-point-nav__item-right
+                            a(href='#').share-point-nav__link.share-point-nav__link-follow follow
+                        li.share-point-nav__item.share-point-nav__item-right
+                            a(href='#').share-point-nav__link.share-point-nav__link-edit edit
+                        li.share-point-nav__item.share-point-nav__item-right
+                            a(href='#').share-point-nav__link
+                                i.fa.fa-arrows-alt(aria-hidden="true")
     .header__main
+        .header-container.header-container-main
+            .header__logo
+                +icon('epam-logo')
+            h1.header__text office space management portal
