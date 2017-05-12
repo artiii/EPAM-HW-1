@@ -27,7 +27,7 @@
   }
 }
 
-@mixin phones_340 {
+@mixin phones_320 {
   @media screen and (max-width: 320px) {
     @content;
   }

@@ -9,7 +9,7 @@ Gulp 4.0
 
 Getting started:
 
-`git clone git@github.com:artiii/portfolio.git` ssh
+`git clone git@github.com:artiii/EPAM-HW-1.git` ssh
 
 `cd path/to/`
 

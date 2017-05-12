@@ -1,3 +1,7 @@
+.header {
+  margin-bottom: 25px;
+}
+
 .header__share-point {
   @include tablets() {
     display: flex;
@@ -6,9 +10,10 @@
     top: 0;
     bottom: 0;
     width: 250px;
-    background-color: $dark-white;
+    background-color: $medium-white;
     transition: all 2s ease-in-out;
     right: 100%;
+    z-index: 5;
     &:after {
       content: '';
       border-radius: 0 100% 100% 0 / 50%;
@@ -18,6 +23,7 @@
       left: 100%;
       background: $light-blue;
       top: 50%;
+      cursor: pointer;
     }
   }
 }
@@ -58,13 +64,15 @@
   display: flex;
   align-items: center;
   flex-grow: 1;
-  padding: 20px;
-}
+ }
 
 .icon-share-point-logo {
   width: 21px;
   height:21px;
   padding-right: 7px;
+  @include tablets() {
+    padding: 10px;
+  }
 }
 
 .share-point-top__text {
@@ -101,17 +109,18 @@
   &:link {}
   &:visited {}
   &:hover {
-    background-color:$dark-white;
+    background-color: $medium-white;
     color: $gray;
   }
   &--active {
-    background-color: $dark-white;
+    background-color: $medium-white;
     @include tablets() {
       background: none;
-    }
-    &:hover {
-      background-color: transparent;
-      color: transparent;
+
+      &:hover {
+        background-color: transparent;
+        color: transparent;
+      }
     }
   }
   @include tablets() {
@@ -149,6 +158,7 @@
 .share-point-top__link--name {
   padding: 0 36px 0 20px;
   position: relative;
+  //noinspection CssNoGenericFontName
   &:after {
     font-family: FontAwesome;
     content: "\f0d7";
@@ -175,7 +185,7 @@
 }
 
 .header__share-point-nav-bg {
-  background-color: $dark-white;
+  background-color: $medium-white;
 }
 
 .header__share-point-nav {
@@ -251,7 +261,7 @@
   transition: all .5s;
   margin-left: 18px;
   &:hover {
-    background-color:$dark-white;
+    background-color: $medium-white;
     color:$gray ;
   }
   @include tablets() {
@@ -260,6 +270,7 @@
 }
 
 .share-point-nav__link-share {
+  //noinspection CssNoGenericFontName
   &:before {
     font-family: FontAwesome;
     content: "\f1e0";
@@ -269,6 +280,7 @@
 }
 
 .share-point-nav__link-follow {
+  //noinspection CssNoGenericFontName
   &:before {
     font-family: FontAwesome;
     content: "\f006";
@@ -278,6 +290,7 @@
 }
 
 .share-point-nav__link-edit {
+  //noinspection CssNoGenericFontName
   &:before {
     font-family: FontAwesome;
     content: "\f040";

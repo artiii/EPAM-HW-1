@@ -6,7 +6,8 @@ $dark-gray: #454446;
 $gray: #666666;
 $medium-gray: #79787a;
 $light-gray: #9a9a9a;
-$dark-white: #EFEFEF;
+$dark-white: #e1e1e1;
+$medium-white: #EFEFEF;
 
 
 // adjustment
@@ -18,3 +19,4 @@ $dark-white: #EFEFEF;
 
 //styles
 @import "common/header";
+@import "common/map";
