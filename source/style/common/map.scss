@@ -1,15 +1,12 @@
 .map-g {
   height: 680px;
+  margin-bottom: 36px;
   @include tablets() {
     display: none;
   }
 }
 
-.container {
-  max-width: 1280px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
+.container-map {
   display: flex;
   justify-content: center;
   position: relative;
@@ -29,7 +26,7 @@
 }
 
 .map-information__number-of-countries  {
-  color: $dark-white;
+  color: $gray-225;
   font-family: oswald_regularregular, sans-serif;
   font-size: 180px;
   user-select: none;
@@ -37,7 +34,7 @@
 }
 
 .map-information__text-countries  {
-  color: $dark-white;
+  color: $gray-225;
   font-family: oswald_regularregular, sans-serif;
   font-size: 20px;
   margin-bottom: 16px;
@@ -59,11 +56,11 @@
 
 .fa-users,.fa-hourglass-o {
   font-size: 16px;
-  color: $dark-white;
+  color: $gray-225;
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  border: 1px solid $dark-white;
+  border: 1px solid $gray-225;
   position: relative;
   margin-bottom: 10px;
   &:before {
@@ -77,7 +74,7 @@
 .other-information__descriprion {
   font-family: "source_sans_proregular", sans-serif;
   font-size: 16px;
-  color: $dark-white;
+  color: $gray-225;
   max-width: 75px;
   text-align: center;
   user-select: none;
@@ -86,5 +83,5 @@
 
 .fa-hourglass-o {
   font-size: 16px;
-  color: $dark-white;
+  color: $gray-225;
  }

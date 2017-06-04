@@ -1,13 +1,28 @@
 // palettes
-$light-blue: #54C4D9;
+$blue-light: #54C4D9;
 $blue: #7AE6F7;
+$blue-dark: #3ac2d7;
 $white: #FEFEFE;
-$dark-gray: #454446;
-$gray: #666666;
-$medium-gray: #79787a;
-$light-gray: #9a9a9a;
-$dark-white: #e1e1e1;
-$medium-white: #EFEFEF;
+$black: #5e5e5e;
+$black-light: #464547;
+$gray-17: #111111; // rgb(17, 17, 17)
+$gray-153: #999999; // rgb(153, 153, 153)
+$gray-172: #acacac; // rgb(172, 172, 172)
+$gray-204: #cccccc; // rgb(204, 204, 204)
+$gray-205: #cdcdcd; // rgb(205, 205, 205)
+$gray-210: #d2d2d2; // rgb(210, 210, 210)
+$gray-102: #666666; // rgb(102, 102, 102)
+$gray-154: #9a9a9a; // rgb(154, 154, 154)
+$gray-225: #e1e1e1; // rgb(225, 225, 225)
+$gray-239: #EFEFEF; // rgb(239, 239, 239)
+$gray-dark: #454446;
+$gray-medium: #79787a;
+$green: #a3c644;
+$green-dark: #92B23D;
+$purple: #937ebd;
+$purple-dark: #8471AA;
+$red-dark: #b32746;
+
 
 
 // adjustment
@@ -20,3 +35,4 @@ $medium-white: #EFEFEF;
 //styles
 @import "common/header";
 @import "common/map";
+@import "common/information";

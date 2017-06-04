@@ -13,6 +13,12 @@
   }
 }
 
+@mixin laptop {
+  @media screen and (max-width: 960px) {
+    @content;
+  }
+}
+
 
 @mixin tablets {
   @media screen and (max-width: 768px) {
