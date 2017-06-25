@@ -303,6 +303,9 @@
   display: flex;
   min-height: 40px;
   align-items: center;
+  &:nth-child(odd) {
+    background-color: $gray-245;
+  }
   @include phones() {
     height: 60px;
   }

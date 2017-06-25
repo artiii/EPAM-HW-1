@@ -11,6 +11,9 @@ global.$ = {
   },
   gulp: require('gulp'),
   rimraf: require('rimraf'),
+  browserify: require('browserify'),
+  buffer: require('vinyl-buffer'),
+  source: require('vinyl-source-stream'),
   browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')()
 };
@@ -25,7 +28,8 @@ $.gulp.task('default', $.gulp.series(
     'sass',
     'pug',
     'js:foundation',
-    'js:process',
+    // 'js:process',
+    'browserify',
     'copy:image',
     'css:foundation',
     'sprite:svg',
