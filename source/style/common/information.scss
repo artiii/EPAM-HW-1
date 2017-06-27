@@ -74,6 +74,9 @@
   position: relative;
   transition: all .5s;
   user-select: none;
+  @include phones() {
+    height: 80px;
+  }
 
 }
 
@@ -93,6 +96,7 @@
     background: $green-dark;
   }
 }
+
  .information__button--place {
   background: $purple;
   padding: 12px 10px 9px 52px;
@@ -318,8 +322,8 @@
   padding-left: 1%;
   max-width: 513px;
   @include tablets() {
-    flex-grow: 63;
-    width: auto;
+    //flex-grow: 63;
+    //width: auto;
 
   }
 }
@@ -328,8 +332,8 @@
   max-width: 149px;
   width: 14.46%;
   @include tablets() {
-    flex-grow: 14;
-    width: auto;
+    //flex-grow: 14;
+    //width: auto;
 
   }
 }
@@ -347,8 +351,8 @@
   //flex-grow: 22;
   width: 26%;
   @include tablets() {
-    flex-grow: 22;
-    width: auto;
+    //flex-grow: 22;
+    //width: auto;
   }
 }
 .table-status__indicator {
@@ -359,7 +363,8 @@
   height: 20px;
   width: 65px;
   padding-left: 12px;
-  &--active {
+  margin-left: 5px;
+  &--resolve {
     background-color: $green-dark;
   }
 }

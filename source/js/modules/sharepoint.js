@@ -1,5 +1,5 @@
-module.exports(function() {
-'use strict'
+module.exports = function() {
+    'use strict'
     var menuOpen = (function () {
         $('.header__share-point').on('click', function(){
             if ($('.header__share-point').hasClass('header__share-point--transform')) {
@@ -10,4 +10,4 @@ module.exports(function() {
             }
         });
     })();
-})();
+};

@@ -126,7 +126,7 @@ module.exports=function(){
 			streetViewControl: false
 		});
 		setMarkers(map);
-	};
+	}
 
 
 
@@ -184,6 +184,6 @@ module.exports=function(){
 				});
 			}
 		}
-	};
+	}
 	window.initMap=initMap;
 };
