@@ -285,19 +285,22 @@
   }
 }
 
-.table-header__date--sort-down {
+.table-header__sort-down {
   border-bottom: 2px solid $blue-dark;
   color: $blue-dark;
+
   &:after {
     //noinspection CssNoGenericFontName
     font-family: FontAwesome;
     content: "\f0d7";
     padding: 5px;
+    transition: transform 0.5s linear;
+
   }
 }
 
-.table-header__date--sort-up {
-  transition: transform 3s linear;
+.table-header__sort-up {
+
   &:after {
     transform: rotate(180deg);
   }

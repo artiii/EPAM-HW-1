@@ -38,13 +38,14 @@ section.information
                     li.table__tab recently viewed units
                     li.table__tab my units
                 header.table__header
-                    .table-header__request Request
-                    .table-header__date.table-header__date--sort-down Date
-                    .table-header__status Status
-                //each i in Array(8)
-                //    .table-body__item
-                //        .table-body__request Praesent felis nibh, faucibus et interdum ut
-                //        .table-body__date 07/24/2015
-                //        .table-body__status
-                //            .table-status__indicator Rejected
+                    .table-header__request(data-description="request") Request
+                    .table-header__date.table-header__sort-down(data-description="date") Date
+                    .table-header__status(data-description="status") Status
+                .table-body__list
+                        //each i in Array(8)
+                        //    .table-body__item
+                        //        .table-body__request Praesent felis nibh, faucibus et interdum ut
+                        //        .table-body__date 07/24/2015
+                        //        .table-body__status
+                        //            .table-status__indicator Rejected
 

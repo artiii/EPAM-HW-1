@@ -1,17 +1,34 @@
 module.exports = function() {
     function Model() {
-        this.list = [
-            {request: 'Praesent felis ', date: '1/03/2015', status: "Rejected"},
-            {request: 'Felis nibh, faucibus', date: '2/04/2014', status: "Resolve"},
-            {request: 'Nibh, faucibus et interdum ut', date: '3/06/2016', status: "Rejected"},
-            {request: 'Nibh, faucibus et interdum ut', date: '22/06/2016', status: "Rejected"},
-            {request: 'Nibh, faucibus et interdum ut', date: '10/06/2016', status: "Rejected"},
-            {request: 'Nibh, faucibus et interdum ut', date: '5/06/2016', status: "Rejected"},
-            {request: 'bim', date: '4/01/2012', status: "Resolve"}
-        ];
-        Model.prototype.get = function () {
-            return this.list;
+        this.sort = function (list, dataType, directionReverse) {
+            if(dataType === 'date') {
+                list.sort(function (a, b) {
+                    if (a[dataType].split('/').reverse() > b[dataType].split('/').reverse()) {
+                        return 1;
+                    }
+                    if (a[dataType].split('/').reverse() < b[dataType].split('/').reverse()) {
+                        return -1;
+                    }
+                    return 0;
+                });
+            }else{
+                list.sort(function (a, b) {
+                    if (a[dataType] > b[dataType]) {
+                        return 1;
+                    }
+                    if (a[dataType] < b[dataType]) {
+                        return -1;
+                    }
+                    return 0;
+                });
+            }
+            if (directionReverse === true)
+                list.reverse();
+            return list
         };
     }
+    Model.prototype.give = function (list) {
+        return list;
+    };
     return Model;
 };

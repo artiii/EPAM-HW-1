@@ -1,12 +1,12 @@
 module.exports = function(){
     function Controller(model, view) {
-        var self = this;
+        // var self = this;
         this.view = view;
         this.model = model;
-        this.view.render(this.model.get());
+        // this.view.render(this.model.give());
     }
-    // Model.prototype.get = function () {
-    //     return this.list;
-    // };
+    Controller.prototype.render = function (list) {
+        this.view.render(list);
+    };
     return Controller;
 };
