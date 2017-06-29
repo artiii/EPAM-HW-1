@@ -1,13 +1,13 @@
 module.exports = function() {
-    'use strict'
+    'use strict';
     var menuOpen = (function () {
-        $('.header__share-point').on('click', function(){
-            if ($('.header__share-point').hasClass('header__share-point--transform')) {
-                $('.header__share-point').removeClass('header__share-point--transform');
-                return
+        var headerSharepoint = document.querySelectorAll('.header__share-point');
+        headerSharepoint[0].addEventListener('click', function () {
+            if(headerSharepoint[0].classList.contains('header__share-point--transform')) {
+                headerSharepoint[0].classList.remove('header__share-point--transform');
             } else {
-                $('.header__share-point').addClass('header__share-point--transform');
+                headerSharepoint[0].classList.add('header__share-point--transform');
             }
-        });
-    })();
+        })
+    }());
 };

@@ -34,9 +34,9 @@ section.information
         .information__right
             .table
                 ul.table__tabs
-                    li.table__tab.table__tab--active my requests
-                    li.table__tab recently viewed units
-                    li.table__tab my units
+                    li.table__tab.table__tab--active(data-tab="myRequests") my requests
+                    li.table__tab(data-tab="recentlyViewedUnits") recently viewed units
+                    li.table__tab(data-tab="myUnits") my units
                 header.table__header
                     .table-header__request(data-description="request") Request
                     .table-header__date.table-header__sort-down(data-description="date") Date

@@ -216,7 +216,7 @@
   color: $white;
   font-family: oswald_regularregular, sans-serif;
   font-size: 15px;
-  padding: 15px 14px 0 14px;
+  padding: 15px 14px 11px 14px;
   cursor: pointer;
   user-select: none;
   transition: all .3s;
@@ -254,35 +254,18 @@
 }
 
 .table-header__request {
-  //flex-grow: 63;
   width: 62%;
-  //padding-left: 15px;
   max-width: 513px;
   padding-left: 1%;
-  @include tablets() {
-    flex-grow: 63;
-    width: auto;
-
-  }
 }
+
 .table-header__date {
-  //flex-grow: 14;
   width: 14.46%;
   max-width: 149px;
-  @include tablets() {
-    flex-grow: 14;
-    width: auto;
-
-  }
 }
-.table-header__status {
-  //flex-grow: 22;
-  width: 26%;
-  @include tablets() {
-    flex-grow: 22;
-    width: auto;
 
-  }
+.table-header__status {
+  width: 26%;
 }
 
 .table-header__sort-down {
@@ -319,26 +302,14 @@
 }
 
 .table-body__request {
-  //flex-grow: 63;
-  //padding-left: 15px;
   width: 62%;
   padding-left: 1%;
   max-width: 513px;
-  @include tablets() {
-    //flex-grow: 63;
-    //width: auto;
-
-  }
 }
+
 .table-body__date {
-  //flex-grow: 14;
   max-width: 149px;
   width: 14.46%;
-  @include tablets() {
-    //flex-grow: 14;
-    //width: auto;
-
-  }
 }
 
 .table-body__request,
@@ -351,11 +322,12 @@
 }
 
 .table-body__status {
-  //flex-grow: 22;
   width: 26%;
   @include tablets() {
-    //flex-grow: 22;
-    //width: auto;
+  }
+  @include phones() {
+    display: flex;
+    justify-content: center;
   }
 }
 .table-status__indicator {
@@ -369,5 +341,13 @@
   margin-left: 5px;
   &--resolve {
     background-color: $green-dark;
+  }
+  @include phones() {
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
   }
 }
